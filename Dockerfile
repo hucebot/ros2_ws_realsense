@@ -7,6 +7,12 @@ RUN apt-get update && apt-get install -y \
     ros-humble-image-transport \
     ros-humble-compressed-image-transport \
     ros-humble-diagnostic-updater \
+    ros-humble-rviz2 \
+    ros-humble-rqt \
+    ros-humble-rqt-image-view \
+    libgl1-mesa-glx \
+    libx11-xcb1 \
+    libxkbcommon-x11-0 \
  && rm -rf /var/lib/apt/lists/*
 
  # Install ROS Humble RealSense packages (Option 2)
