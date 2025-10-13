@@ -15,4 +15,5 @@ docker run -it --rm \
     --pid host \
     --volume /dev:/dev \
     --privileged \
+    -v /media/panda-ai/Data/rosbags:/rosbags \
     realsense_ros2
