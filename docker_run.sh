@@ -8,6 +8,7 @@ docker run -it --rm \
     --env XAUTHORITY=$XAUTHORITY \
     --env XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR \
     --env QT_X11_NO_MITSHM=1 \
+    --env RMW_IMPLEMENTATION=rmw_cyclonedds_cpp \
     --env ROS_DOMAIN_ID=39 \
     --volume /tmp/.X11-unix:/tmp/.X11-unix:rw \
     --net host \
@@ -15,5 +16,4 @@ docker run -it --rm \
     --pid host \
     --volume /dev:/dev \
     --privileged \
-    -v /media/panda-ai/Data/rosbags:/rosbags \
     realsense_ros2
